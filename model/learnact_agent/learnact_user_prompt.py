@@ -526,14 +526,18 @@ Action: put_away('w1','boot')
 Observation: W1 is in boot.
 Action: fetch('r1','boot')
 Observation: You have r1.
-Action: put_on_wheel('r1','the-hub1')
-Observation: R1 is on the-hub1.
-Action: do_up('nuts1','the-hub1')
-Observation: Hub the-hub1 is fastened.
 Action: fetch('pump','boot')
 Observation: You have pump.
 Action: inflate('r1')
-Observation: r1 is inflated. The task is completed.
+Observation: r1 is inflated. 
+Action: put_on_wheel('r1','the-hub1')
+Observation: R1 is on the-hub1.
+Action: do_up('nuts1','the-hub1')
+Observation: The nut nuts1 on the hub the-hub1 is loose. 
+Action: jack_down('the-hub1')
+Observation: Hub the-hub1 is on the ground.
+Action: tighten('nuts1','the-hub1')
+Observation: Hub the-hub1 is fastened. The task is completed.
 """
         ],
         "instruction": """
