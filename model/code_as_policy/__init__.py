@@ -1,0 +1,2 @@
+from model.code_as_policy.code_as_policy import code_as_policy
+from model.code_as_policy.code_as_policy_prompt import code_as_policy_prompt_dict, code_as_policy_prompt_hier_dict

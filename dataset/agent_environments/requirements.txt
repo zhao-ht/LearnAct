@@ -1,0 +1,31 @@
+gymnasium
+playwright==1.32.1
+Pillow
+evaluate
+openai
+types-tqdm
+tiktoken
+prompt_toolkit
+aiolimiter
+beartype==0.12.0
+minigrid==2.3.0
+nltk
+tenacity
+timeout-decorator
+gradio
+gym==0.24.0  # should remove alfworld's requirement: gym==0.15.4
+werkzeug==2.2.2
+gspread
+imageio
+scikit-image
+geopy
+jsonlines
+vllm
+torch==2.0.1 # vllm 0.2.1.post1 requires
+# anthropic #may conflict with vllm
+openai
+python-dotenv
+bs4
+deepspeed
+scienceworld
+torchvision==0.15.2
