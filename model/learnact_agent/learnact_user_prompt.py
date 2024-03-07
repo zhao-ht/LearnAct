@@ -506,7 +506,7 @@ You are a robot with a gripper that can move objects between different rooms. Yo
     "tyreworld": {
         "examples": [
             """
-The goal is to satisfy the following conditions: w1 is in boot. (Note you need to open boot first so that you can extract tools from it.)
+The goal is to satisfy the following conditions: Wheel r1 is inflated., r1 is on the-hub1., w1 is in boot. (Note you need to open boot first so that you can extract tools from it.)
 Observation: Boot is closed. Boot is unlocked. Hub the-hub1 is fastened. Hub the-hub1 is on the ground. Jack is in boot. Pump is in boot. R1 is in boot. The nut nuts1 on the hub the-hub1 is tight. Wheel r1 is intact. Wheel r1 is not inflated. Wheel w1 is on hub the-hub1. Wrench is in boot.
 Action: open('boot').
 Observation: Boot is open. 
@@ -523,7 +523,17 @@ Observation: Hub the-hub1 is unfastened.
 Action: remove_wheel('w1','the-hub1')
 Observation: You have w1. 
 Action: put_away('w1','boot')
-Observation: W1 is in boot. Goal is completed.
+Observation: W1 is in boot.
+Action: fetch('r1','boot')
+Observation: You have r1.
+Action: put_on_wheel('r1','the-hub1')
+Observation: R1 is on the-hub1.
+Action: do_up('nuts1','the-hub1')
+Observation: Hub the-hub1 is fastened.
+Action: fetch('pump','boot')
+Observation: You have pump.
+Action: inflate('r1')
+Observation: r1 is inflated. The task is completed.
 """
         ],
         "instruction": """
