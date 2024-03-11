@@ -64,9 +64,6 @@ cd ..
 cd ..
 ```
 
-### Note
-Some packages, such as `PyTorch`, are dependencies of the `ALFWorld` package but are not directly utilized in this project.
-
 
 ## Set OpenAI Key
 
