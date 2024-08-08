@@ -11,6 +11,9 @@ Left: During the training stage, LearnAct expands the action space by first crea
 
 Additionally, we benchmark several baselines, including ReAct, Reflection, and CodeAsPolicy, across various tasks such as AlfWorld and Robotic Planning.
 
+## News
+**2024.8.8** Our work has been accepted by COLM 2024! The camera-ready version will be coming soon.
+
 ## Installation
 To run LearnAct, please clone the repository to your local machine and install the required dependencies using the script provided. The environment have been tested with `Python 3.9`. If you're using a different version of Python, you might need to adjust the versions of the packages accordingly.
 
